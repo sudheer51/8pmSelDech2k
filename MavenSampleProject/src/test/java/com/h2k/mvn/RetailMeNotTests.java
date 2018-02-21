@@ -18,11 +18,9 @@ public class RetailMeNotTests extends BaseClass{
 	public String[][] feedDP() throws BiffException, IOException
 	{
 		String arr[][] = readXlsFile();
+		System.out.println("Array Length::" + arr.length);
 		return arr;
 	}
-	
-	
-	
 	@Test(dataProvider="DP")
 	public void validateCategoryInformation(String cName,String cID,String cCount)
 	{
